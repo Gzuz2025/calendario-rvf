@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario de Actividades Iglesia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="calendar-container">
+    <!-- Panel Izquierdo: Leyenda de Actividades -->
+    <div class="legend-panel">
+      <h2>Actividades</h2>
+      <p class="subtitle">Pasa el cursor sobre una actividad para resaltar los días</p>
+      <div class="legend-list" id="legendList">
+        <!-- Se genera dinámicamente con JS -->
+      </div>
+      <div class="general-info">
+        <strong>Domingos:</strong> Reunión General 10:00 am
+      </div>
+    </div>
+
+    <!-- Panel Derecho: El Calendario -->
+    <div class="calendar-panel">
+      <div class="calendar-header">
+        <button id="prevMonth">&lt;</button>
+        <h2 id="monthTitle">Junio 2026</h2>
+        <button id="nextMonth">&gt;</button>
+      </div>
+
+      <!-- Días de la semana -->
+      <div class="weekdays">
+        <div>Dom</div>
+        <div>Lun</div>
+        <div>Mar</div>
+        <div>Miér</div>
+        <div>Jue</div>
+        <div>Vier</div>
+        <div>Sáb</div>
+      </div>
+
+      <!-- Matriz de días del mes -->
+      <div class="calendar-days" id="calendarDays">
+        <!-- Se genera dinámicamente con JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
